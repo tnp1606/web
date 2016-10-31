@@ -1,0 +1,79 @@
+header
+{
+	background-color: #ECECEA;
+	text-align: center;
+}
+
+h1
+{
+	color: #037367;
+	font-family: Monotype corsiva; Corbel; Arial;
+}
+
+body
+{
+	background-color: #ECECEA;
+}
+
+fieldset
+{
+  background-color: #DAE9E4;
+  max-width:500px;
+  padding:16px;	
+  border: dotted solid;
+  border-color: #8BCBC8;
+  border-width: 3px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+   margin: 0 auto;
+
+}
+
+legend{
+	text-transform: uppercase;
+	color: #037367;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+p
+{
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  float: left;
+}
+
+input
+{
+	margin: 2px 2px 2px 4px;
+}
+
+img
+{
+	margin: 2px 2px 2px 4px;
+  width: 200px;
+}
+
+div
+{
+	float: none;
+	margin: 0 auto;
+	width: 100px;
+}
+
+span
+{
+  display: inline-block;
+  width: 50px;
+  background-color: #ECECEA;
+  text-align: center;
+  border: 1px solid;
+  border-color: #037367;
+
+}

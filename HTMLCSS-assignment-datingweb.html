@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Elise Tran Ngoc Phung">
+	<title>TNP's 2nd project: DATING WEBSITE</title>
+	<link rel="shortcut icon" href="IMG\TNP-sign.ico" />
+	<link rel="stylesheet" href="CSS\HTMLCSS-assignment.css">
+
+	<script type="text/javascript">
+	<!-- javascript provided by the professor, I dont really understand it -->
+	window.onload = function() {
+    var files = document.querySelectorAll("input[type=file]");
+    files[0].addEventListener("change", function(e) {
+        if(this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) { document.getElementById("preview").setAttribute("src", e.target.result); }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+}
+	</script>
+
+</head>
+
+<header>
+    <h1>Please enter your details for our dating website!</h1>
+</header>
+
+<body>   
+<form>
+	<fieldset>
+		<legend>Your Face</legend>
+		<label for="image">Your image </label><input type='file' onchange="readURL(this);" /><br>
+    	<p>Image Preview </p><img id="preview" />
+	</fieldset> <br>
+
+	<fieldset>
+		<legend>Your General Details</legend>
+		<label for="name">Name </label><input type="text" name="name" placeholder="Your pretty name goes here"> <br>
+		<label for="gender">Gender </label><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female <br>
+		<label for="age">Age </label><input type="number" name="age" min="18" placeholder="18"><br>
+		<label for="dob">Date of birth </label><input type="date" name="dob"><br>
+		<label for="color">Favorite color </label><input type="color" name="color"><br>
+		<label for="country">Which country </label><input type="radio" name="country" value="Vietnam">Vietnam
+		<input type="radio" name="country" value="France">France
+	</fieldset> <br>
+
+	<fieldset>
+		<legend>Your Indicators</legend>
+		<label for="height">Height:</label> <span>Short </span><input type="range" min="0" max="100" step="5" value="50" id="height" name="height"> <span >Tall</span><br>
+		<label for="salary">Salary:</label> <span>Poor </span><input type="range" min="0" max="100" step="5" value="50" id="height" name="height"> <span>Rich</span><br>
+	</fieldset><br>
+
+	<fieldset>
+		<legend>Your contact information</legend>
+		<label for="email">Email </label><input type="text" name="email"><br>
+		<label for="mobile">Mobile </label><input type="text" name="mobile"><br>
+		<label for="address">Address </label><input type="textarea" name="address"><br>
+		<label for="method">Method to contact you: </label><input type="checkbox" name="Email" value="Email">Email <input type="checkbox" name="Whatsapp" value="Whatsapp">Whatsapp <input type="checkbox" name="Letter" value="Letter">Letter<br>
+	</fieldset>
+	<div><input style="text-align:center" type="submit" value="Submit!"></div>
+</form>
+</body>
+</html>
